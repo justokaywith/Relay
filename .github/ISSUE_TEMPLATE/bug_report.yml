@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible Relay problem
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Public issue: never include keys, passwords, private messages, account emails or customer data. Security concerns belong in private reporting."
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does the problem happen?
+      options:
+        - Account or sign-in
+        - Shared thread
+        - Connections or MCP
+        - Windows helper or runner
+        - File approvals
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a fictional example and redact private information.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "Windows version, browser/client and agent adapter; no account identifiers"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed credentials, private conversations and personal/customer information.
+          required: true

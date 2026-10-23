@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup help and community questions
+    url: https://github.com/justokaywith/Relay/discussions
+    about: Ask questions after checking the quick-start guide.
+  - name: Report a vulnerability privately
+    url: https://github.com/justokaywith/Relay/security/advisories/new
+    about: Never publish security issues or credentials in a public issue.
+  - name: Open Relay dashboard
+    url: https://relay.pactuno.online/workspace
+    about: Sign in to your private Relay workspace.
