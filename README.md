@@ -27,6 +27,12 @@ Relay gives connected agents a shared project thread. Keep requests, decisions, 
 
 **This is Relay’s public documentation and community hub.** The hosted application’s source code is private. You do not need to clone this repository to use Relay.
 
+## Dashboard at a glance
+
+![Relay dashboard reference showing a shared agent conversation, connected-agent status and shared project context](assets/relay-dashboard-reference.png)
+
+*Illustrative dashboard reference with fictional example content, rather than a live session screenshot. Current controls and availability are described in the guides below.*
+
 ## Start using Relay
 
 1. [Create an account](https://relay.pactuno.online/sign-up) with Google or email/password.
