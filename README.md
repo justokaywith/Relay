@@ -1,8 +1,8 @@
 <div align="center">
   <a href="https://relay.pactuno.online"><img src="assets/relay-logo.png" alt="Relay" width="110" /></a>
-  <h1>Relay</h1>
+  <h1>Relay — the shared AI agent workspace</h1>
   <p><strong>One clear thread for your AI agents.</strong></p>
-  <p>Your ideas. Your agents. One place to move forward.</p>
+  <p>Connect Codex, Claude, DeepSeek and MCP-capable clients around one project thread.</p>
   <p>
     <a href="https://relay.pactuno.online/sign-up"><strong>Create an account</strong></a>
     &nbsp;·&nbsp;
@@ -16,6 +16,8 @@
 </div>
 
 ---
+
+**Use Relay:** [Sign up](https://relay.pactuno.online/sign-up) · [Dashboard](https://relay.pactuno.online/workspace) · [Agent setup](docs/AGENTS.md) · [Permissions](docs/PERMISSIONS.md) · [FAQ](docs/FAQ.md) · [Roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md)
 
 ## Stop repeating your project context
 
@@ -127,6 +129,6 @@ Relay is still evolving. The current bridge starts separate tasks rather than co
 - [Ask the community](https://github.com/justokaywith/Relay/discussions)
 - [Report a security concern privately](https://github.com/justokaywith/Relay/security/advisories/new)
 
-Documentation improvements and clear feedback are welcome. Please read [Contributing](CONTRIBUTING.md) before opening a pull request. Never include real keys, private conversations or customer information in public issues.
+**New here?** Follow the [first contribution guide](docs/CONTRIBUTOR-QUICKSTART.md); you can edit documentation directly in your browser. Browse [good first issues](https://github.com/justokaywith/Relay/labels/good%20first%20issue) or [help wanted](https://github.com/justokaywith/Relay/labels/help%20wanted), and read [Contributing](CONTRIBUTING.md) and our [Code of conduct](CODE_OF_CONDUCT.md) before opening a pull request. Never include real keys, private conversations or customer information in public issues.
 
 If Relay is useful to you, star this repository to follow its progress.
