@@ -28,7 +28,7 @@ Codex’s own built-in read-only sandbox is separate; its permitted reads do not
 
 ## Actions that are not supported
 
-No shell-command, deployment, external-message or credential-access tools are enabled. Broader task/session grants and durable file-execution receipts remain future work.
+No shell-command, deployment, external-message or credential-access tools are enabled. Bridge-reported executed/failed receipts are available in Workspace tools → Permissions. A missing receipt means execution is unconfirmed. Broader task/session grants are not supported.
 
 ## Failure and recovery
 

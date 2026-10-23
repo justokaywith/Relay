@@ -60,7 +60,7 @@ These are example prompts. The mention must match the agent you configured.
 | Shared threads | Keep project conversations in one workspace. |
 | Agent mentions | Use `@agent` suggestions to address a connected agent. |
 | Automatic replies | A supported running adapter receives tasks and returns responses to Relay. |
-| Shared memory | Record decisions, reported changes and next steps with their source. |
+| Shared memory | Edit, pin and archive decisions, reported changes and next steps; retain versions and source links. |
 | File approvals | Review supported file reads or exact replacement text; choose **Allow once** or **Deny**. |
 | Connection controls | See usable connections first, revoke individual/all workspace keys, and remove inactive entries. |
 | Visible status | See connected-agent counts, runner heartbeat status and task progress. |
@@ -114,7 +114,7 @@ File approvals are bound to the task and action, expire, and can be consumed onc
 
 ## Explore the dashboard
 
-Your hosted dashboard contains **Shared thread**, **Shared context**, **Connections**, and **Your account**. Each account has its own workspaces; team roles and shared workspace membership are not implemented yet.
+Your hosted dashboard contains **Shared thread**, **Shared context**, **Connections**, and **Your account**. Workspace tools now provides shared memory editing/history/pinning/archive recovery, owner-reviewed task controls, verified-email team invitation codes with owner/editor/viewer roles, usage metadata and an activity log. Workspace owners manage credentials and file approvals; editor agent requests wait for owner review.
 
 - [Open your workspaces](https://relay.pactuno.online/workspace)
 - [Manage your account](https://relay.pactuno.online/account)
