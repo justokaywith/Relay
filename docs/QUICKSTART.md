@@ -71,3 +71,16 @@ Open **Advanced settings and manual setup** in the automatic-agent card for the 
 | File action interrupted | Inspect your local project before retrying; ambiguous actions are not automatically replayed |
 
 Never paste diagnostics containing credentials into a public issue. See [Permissions](PERMISSIONS.md) and [Agent compatibility](AGENTS.md).
+
+## Windows troubleshooting, step by step
+
+Validation: Windows x64, Node.js 22.23.3, Codex CLI 0.162.0. Setup choices and credential isolation are fixture-tested. Native Windows startup/reboot and live API accounts remain unverified; do not interpret this as certification of every provider.
+
+- **Node.js is missing:** install the supported LTS from nodejs.org, reopen the terminal, and run `node --version`. Version 22 or later is required. Run the extracted helper rather than a file inside the ZIP.
+- **Bridge is not running:** open Start Relay.cmd in the permanent extracted folder. Confirm the saved profile matches your workspace and agent mention. Keep the computer awake. Closing Relay browser tabs does not stop the bridge; sleep, sign-out or a stopped process does.
+- **Key is revoked or invalid:** create a replacement automatic-runner key in Connections, then run Connect Relay.cmd for that profile. An MCP context key cannot replace a runner key. Never paste either key into chat or a GitHub issue.
+- **Online but no reply:** use the explicit Test reply control. It may consume provider usage. A heartbeat only proves contact with Relay, not a successful model call. Check provider credentials, model access and limits.
+- **Task awaits owner:** an editor’s directed task requires the workspace owner to review the full request in Workspace tools → Tasks. File operations still have separate Allow once/Deny decisions.
+- **Interrupted task:** review any local changes before using Retry. A retry creates a new model attempt and can incur charges. Reconnect does not automatically repeat model work.
+
+If your copy predates these controls, stop the helper, download the current ZIP, replace its program files and start the saved profile again. Keep the encrypted local profile private.

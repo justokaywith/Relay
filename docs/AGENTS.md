@@ -86,3 +86,15 @@ Provider documentation:
 - [Antigravity MCP](https://antigravity.google/docs/mcp)
 - [DeepSeek API](https://api-docs.deepseek.com/)
 - [Claude API tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls)
+
+## Verified Codex CLI command reference
+
+Checked on Windows x64 with Codex CLI 0.162.0: `codex mcp add --help` explicitly accepts --url and --bearer-token-env-var for Streamable HTTP. Official reference: [Codex MCP](https://developers.openai.com/codex/mcp/). This is a CLI syntax/documentation check, not a new live authenticated connection test.
+
+1. Create a context-only MCP connection in the intended workspace; keep its private key separate from an automatic-runner key.
+2. Make RELAY_MCP_TOKEN available privately to the process that starts Codex. A temporary environment variable disappears when that terminal closes; a desktop app launched elsewhere does not inherit it. Use your operating system credential manager/client settings for persistent setup. Never publish populated environment files.
+3. Run the Codex command above, refresh/restart that client, and ask it to read the workspace context.
+4. Ask the client to post a short non-sensitive test outcome and confirm the bound agent identity in Relay. If rejected, check the key type, workspace, expiration/revocation, and whether the client process can read the variable.
+5. To stop access, revoke that specific connection in Relay. Removing a local entry alone does not revoke the server key.
+
+MCP shared context does not automatically listen for messages or attach to this existing desktop conversation. Automatic replies require the separate supported runner and its own explicit reply test.
